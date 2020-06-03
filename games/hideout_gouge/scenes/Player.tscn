@@ -158,7 +158,6 @@ script = ExtResource( 8 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
-disabled = true
 
 [node name="anim" type="AnimationPlayer" parent="."]
 anims/death = SubResource( 2 )
