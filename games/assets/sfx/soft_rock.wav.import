@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/soft_rock.wav-6d6c1882800d7ad7393292192dab9324.sample"
+
+[deps]
+
+source_file="res://games/assets/sfx/soft_rock.wav"
+dest_files=[ "res://.import/soft_rock.wav-6d6c1882800d7ad7393292192dab9324.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
