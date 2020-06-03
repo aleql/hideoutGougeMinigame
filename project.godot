@@ -8,19 +8,30 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Config",
+"language": "GDScript",
+"path": "res://scripts/Config.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Entity",
+"language": "GDScript",
+"path": "res://games/hideout_gouge/scripts/Entity.gd"
+} ]
 _global_script_class_icons={
-
+"Config": "",
+"Entity": ""
 }
 
 [application]
 
 config/name="ChimeraPartyExample"
-run/main_scene="res://games/scenes/index.tscn"
+run/main_scene="res://games/hideout_gouge/index.tscn"
 
 [autoload]
 
-Party="*res://games/scripts/Party.gd"
+Party="*res://scripts/Party.gd"
 
 [display]
 
