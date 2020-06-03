@@ -99,11 +99,6 @@ animations = [ {
 "name": "walk_down",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 8 ) ],
-"loop": true,
-"name": "attack_down",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 18 ), ExtResource( 13 ), ExtResource( 18 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "walk_left",
@@ -112,6 +107,21 @@ animations = [ {
 "frames": [ ExtResource( 63 ), ExtResource( 61 ) ],
 "loop": true,
 "name": "attack_up",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "attack_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 59 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "attack_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 62 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "attack_right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 16 ), ExtResource( 14 ), ExtResource( 16 ), ExtResource( 3 ) ],
@@ -124,24 +134,9 @@ animations = [ {
 "name": "walk_right",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 62 ), ExtResource( 60 ) ],
-"loop": true,
-"name": "attack_right",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 59 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "attack_left",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "iddle_down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 18 ) ],
-"loop": true,
-"name": "iddle_right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 88 ) ],
@@ -158,6 +153,11 @@ animations = [ {
 "loop": true,
 "name": "iddle_left",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ) ],
+"loop": true,
+"name": "iddle_right",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=2]
@@ -165,11 +165,6 @@ animations = [ {
 "frames": [ ExtResource( 41 ), ExtResource( 46 ), ExtResource( 41 ), ExtResource( 30 ) ],
 "loop": true,
 "name": "walk_down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 38 ), ExtResource( 28 ) ],
-"loop": true,
-"name": "attack_down",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 49 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 31 ) ],
@@ -182,6 +177,21 @@ animations = [ {
 "name": "attack_up",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 38 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "attack_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "attack_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "attack_right",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 27 ), ExtResource( 35 ), ExtResource( 27 ), ExtResource( 35 ) ],
 "loop": true,
 "name": "walk_up",
@@ -192,24 +202,9 @@ animations = [ {
 "name": "walk_right",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 25 ), ExtResource( 20 ) ],
-"loop": true,
-"name": "attack_right",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 42 ), ExtResource( 43 ) ],
-"loop": true,
-"name": "attack_left",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 41 ) ],
 "loop": true,
 "name": "iddle_down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 24 ) ],
-"loop": true,
-"name": "iddle_right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 85 ) ],
@@ -226,6 +221,11 @@ animations = [ {
 "loop": true,
 "name": "iddle_left",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "iddle_right",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
@@ -233,11 +233,6 @@ animations = [ {
 "frames": [ ExtResource( 44 ), ExtResource( 40 ), ExtResource( 44 ), ExtResource( 47 ) ],
 "loop": true,
 "name": "walk_down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 56 ), ExtResource( 57 ) ],
-"loop": true,
-"name": "attack_down",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 32 ), ExtResource( 50 ), ExtResource( 32 ), ExtResource( 22 ) ],
@@ -250,6 +245,21 @@ animations = [ {
 "name": "attack_up",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 56 ), ExtResource( 57 ) ],
+"loop": true,
+"name": "attack_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 51 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "attack_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 58 ), ExtResource( 55 ) ],
+"loop": true,
+"name": "attack_right",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 37 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 34 ) ],
 "loop": true,
 "name": "walk_up",
@@ -260,24 +270,9 @@ animations = [ {
 "name": "walk_right",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 58 ), ExtResource( 55 ) ],
-"loop": true,
-"name": "attack_right",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 51 ), ExtResource( 54 ) ],
-"loop": true,
-"name": "attack_left",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 44 ) ],
 "loop": true,
 "name": "iddle_down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 33 ) ],
-"loop": true,
-"name": "iddle_right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 86 ) ],
@@ -294,6 +289,11 @@ animations = [ {
 "loop": true,
 "name": "iddle_left",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 33 ) ],
+"loop": true,
+"name": "iddle_right",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=4]
@@ -301,11 +301,6 @@ animations = [ {
 "frames": [ ExtResource( 64 ), ExtResource( 67 ), ExtResource( 64 ), ExtResource( 71 ) ],
 "loop": true,
 "name": "walk_down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 74 ), ExtResource( 82 ) ],
-"loop": true,
-"name": "attack_down",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 80 ), ExtResource( 68 ), ExtResource( 80 ), ExtResource( 65 ) ],
@@ -318,6 +313,21 @@ animations = [ {
 "name": "attack_up",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 74 ), ExtResource( 82 ) ],
+"loop": true,
+"name": "attack_down",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 83 ) ],
+"loop": true,
+"name": "attack_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 73 ), ExtResource( 69 ) ],
+"loop": true,
+"name": "attack_right",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 79 ), ExtResource( 81 ), ExtResource( 79 ), ExtResource( 75 ) ],
 "loop": true,
 "name": "walk_up",
@@ -328,24 +338,9 @@ animations = [ {
 "name": "walk_right",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 73 ), ExtResource( 69 ) ],
-"loop": true,
-"name": "attack_right",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 78 ), ExtResource( 83 ) ],
-"loop": true,
-"name": "attack_left",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 64 ) ],
 "loop": true,
 "name": "iddle_down",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 76 ) ],
-"loop": true,
-"name": "iddle_right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 87 ) ],
@@ -361,6 +356,11 @@ animations = [ {
 "frames": [ ExtResource( 80 ) ],
 "loop": true,
 "name": "iddle_left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 76 ) ],
+"loop": true,
+"name": "iddle_right",
 "speed": 5.0
 } ]
 
@@ -521,6 +521,6 @@ wait_time = 5.0
 one_shot = true
 [connection signal="timeout" from="Timer" to="Navigation2D/FireClock" method="_on_GameTimer_timeout"]
 [connection signal="timeout" from="Timer" to="owlBear" method="_on_GameTimer_timeout"]
-[connection signal="timeout" from="PreparationTimer" to="owlBear" method="_on_PreparationTimer_timeout"]
 [connection signal="timeout" from="PreparationTimer" to="." method="_on_PreparationTimer_timeout"]
+[connection signal="timeout" from="PreparationTimer" to="owlBear" method="_on_PreparationTimer_timeout"]
 [connection signal="timeout" from="Phase2Timer" to="owlBear" method="_on_Phase2Timer_timeout"]

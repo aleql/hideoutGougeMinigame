@@ -33,7 +33,9 @@ func init(player_index, player_color):
 	
 	# Player of available color
 	anim_sprite = get_node("../../PlayerAnimations/anim_player_" + str(player_color))
+	anim_sprite.get_parent().remove_child(anim_sprite)
 	add_child(anim_sprite)
+	anim_sprite.position = Vector2.ZERO
 	
 	var spi = str(player_index)
 	move_left = "move_left_" + spi
@@ -44,7 +46,7 @@ func init(player_index, player_color):
 	action_b = "action_b_" + spi
 
 func _physics_process(delta):
-	anim_sprite.position = position
+#	anim_sprite.position = position
 	physics_update()
 	match state:
 		"moving":
@@ -60,21 +62,21 @@ func state_moving():
 	player_vel = Vector2(Input.get_action_strength(move_right) - Input.get_action_strength(move_left),
 	Input.get_action_strength(move_down) - Input.get_action_strength(move_up)) * SPEED
 	
-	var obtained_direction = get_direction()
-	if obtained_direction != null:
-		player_direction = obtained_direction
-
 	if Input.is_action_pressed(move_left) and not Input.is_action_pressed(move_right):
 		anim_sprite.play("walk_left")
+		player_direction = "left"
 
 	elif Input.is_action_pressed(move_right) and not Input.is_action_pressed(move_left):
 		anim_sprite.play("walk_right")
+		player_direction = "right"
 		
 	elif Input.is_action_pressed(move_down) and not Input.is_action_pressed(move_up):
 		anim_sprite.play("walk_down")
+		player_direction = "down"
 
 	elif Input.is_action_pressed(move_up) and not Input.is_action_pressed(move_down):
-		anim_sprite.play("walk_up")	
+		anim_sprite.play("walk_up")
+		player_direction = "up"
 	else:
 		anim_sprite.play("iddle_" + player_direction)
 
@@ -136,16 +138,6 @@ func state_building():
 		$plank/anim_sprite.visible = false
 		$plank/anim.play("death")
 		state = "moving"
-
-func get_direction():
-	if Input.is_action_just_pressed(move_left):
-		return "left"
-	elif Input.is_action_just_pressed(move_right):
-		return "right"
-	elif Input.is_action_just_pressed(move_up):
-		return "up"
-	elif Input.is_action_just_pressed(move_down):
-		return "down"
 
 func on_animation_finished(anim_name):
 	state = "moving"
