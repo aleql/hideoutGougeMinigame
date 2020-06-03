@@ -119,7 +119,7 @@ func get_players():
 	if !started:
 		players = Players.get_children()
 		players_index = range(Players.get_child_count())
-		if Players.get_child_count() > 2:
+		if Players.get_child_count() > 1:
 			started = true
 
 func _on_PreparationTimer_timeout():
